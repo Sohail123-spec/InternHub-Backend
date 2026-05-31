@@ -1,0 +1,255 @@
+{
+  "info": {
+    "_postman_id": "37f13813-33cd-4468-9b4d-dbde22b7ae02",
+    "name": "InternHub API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52554238",
+    "_collection_link": "https://go.postman.co/collection/52554238-37f13813-33cd-4468-9b4d-dbde22b7ae02?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Interns",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Documentation Test Record\",\r\n  \"email\": \"documentation@test.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"college\": \"XYZ Engineering College\",\r\n  \"domain\": \"MERN Stack\",\r\n  \"status\": \"Active\",\r\n  \"startDate\": \"2026-06-01\",\r\n  \"notes\": \"Used for Postman collection and screenshots\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/interns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "interns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Intern",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Documentation Test Record\",\r\n  \"email\": \"documentation@test.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"college\": \"XYZ Engineering College\",\r\n  \"domain\": \"MERN Stack\",\r\n  \"status\": \"Active\",\r\n  \"startDate\": \"2026-06-01\",\r\n  \"notes\": \"Used for Postman collection and screenshots\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/interns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "interns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Intern",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Documentation Test Record\",\r\n  \"email\": \"documentation@test.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"college\": \"XYZ Engineering College\",\r\n  \"domain\": \"MERN Stack\",\r\n  \"status\": \"Active\",\r\n  \"startDate\": \"2026-06-01\",\r\n  \"notes\": \"Used for Postman collection and screenshots\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/interns/6a1c9b2ddaeddeaaf20e6b25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "interns",
+            "6a1c9b2ddaeddeaaf20e6b25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Intern",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"Completed\",\r\n  \"notes\": \"Updated through Postman Collection\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/interns/6a1c9b2ddaeddeaaf20e6b25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "interns",
+            "6a1c9b2ddaeddeaaf20e6b25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Intern",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"Completed\",\r\n  \"notes\": \"Updated through Postman Collection\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/interns/6a1c9b2ddaeddeaaf20e6b25",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "interns",
+            "6a1c9b2ddaeddeaaf20e6b25"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
