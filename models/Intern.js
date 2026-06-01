@@ -31,12 +31,16 @@ const internSchema = new mongoose.Schema(
       required: true,
       enum: [
         "MERN Stack",
-        "VLSI",
+        "Full Stack",
+        "Frontend Development",
+        "Backend Development",
+        "Java Development",
+        "Python Development",
         "AI/ML",
         "Data Science",
         "Cyber Security",
-        "Java Development",
-      ],
+        "VLSI",
+        ],
     },
 
     status: {
